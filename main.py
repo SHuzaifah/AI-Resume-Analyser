@@ -54,7 +54,7 @@ Please provide your analysis in a clear, structured format with specific recomme
         client = genai.Client(api_key=GOOGLE_API_KEY)
         with st.spinner("Analyzing your resume..."):
             response = client.models.generate_content(
-                model="gemini-3.5-pro", 
+                model="gemini-2.5-flash", 
                 contents=f"You are an expert in resume analysis with experience as HR Manager.\n\n{prompt}"
             )
         max_tokens = 1000
